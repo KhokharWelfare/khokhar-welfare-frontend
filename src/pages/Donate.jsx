@@ -64,7 +64,7 @@ function Donate() {
     }
 
     try {
-      const response = await axios.post('https://khokharwelfare-backend-1.vercel.app/api/donation', data, {
+      const response = await axios.post('https://khokharwelfare-backend-1-eta.vercel.app/api/donation', data, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',
