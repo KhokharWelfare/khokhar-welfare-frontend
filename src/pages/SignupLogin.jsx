@@ -31,7 +31,7 @@ function SignupLogin() {
     e.preventDefault();
     if (!validateForm()) return;
 
-    const url = isSignup ? 'https://khokhar-welfare-foundation.vercel.app/api/auth/register' : 'https://khokhar-welfare-foundation.vercel.app/api/auth/login';
+    const url = isSignup ? 'https://khokharwelfare-backend-1.vercel.app/api/auth/register' : 'https://khokharwelfare-backend-1.vercel.app/api/auth/login';
     try {
       console.log(formData, "before");
       const res = await axios.post(url, formData);
