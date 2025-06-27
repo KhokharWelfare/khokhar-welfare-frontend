@@ -310,3 +310,36 @@ body {
 .table-btn:hover {
   background-color: #2DD4BF; /* teal */
 }
+
+
+/* Responsive Table */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Responsive Form Container */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 0 1rem;
+  }
+
+  .heroText {
+    left: 15% !important;
+    top: 30% !important;
+    font-size: 1.5rem !important;
+  }
+
+  .hero h1, .hero-donate h1 {
+    font-size: 2rem;
+  }
+
+  .flex-container {
+    flex-direction: column !important;
+  }
+
+  .flex-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
