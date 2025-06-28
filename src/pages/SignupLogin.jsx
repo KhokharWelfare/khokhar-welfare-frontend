@@ -31,7 +31,7 @@ function SignupLogin() {
     e.preventDefault();
     if (!validateForm()) return;
 
-    const url = isSignup ? 'khokharwelfare-backend-1-production.up.railway.app/api/auth/register' : 'khokharwelfare-backend-1-production.up.railway.app/api/auth/login';
+    const url = isSignup ? 'http://localhost:5000/api/auth/register' : 'http://localhost:5000/api/auth/login';
     try {
       console.log(formData, "before");
       const res = await axios.post(url, formData);
